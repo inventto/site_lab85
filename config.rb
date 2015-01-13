@@ -6,7 +6,7 @@
 # ----------------------------------------------
 @google_analytics = ''
 set :site_name, 'Lab 85 - Soluções Computacionais'
-set :site_description, 'A Static Site Generator'
+set :site_description, 'Startup de softwares voltados à wellness e fitness'
 set :site_url, 'http://lab85.com.br'
 set :site_twitter, '@lab85'
 
