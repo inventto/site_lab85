@@ -1,0 +1,81 @@
+.testimonial
+  +clearfix
+
+.testimonial--home
+  text-align: center
+
+  min-height: 435px
+  padding-top: 30px
+  padding-bottom: 58px
+  color: #444
+
+.avatar img
+  border-radius: 50%
+  width: 100px
+
+.testimonial__title
+  +inuit-font-size(42px, 1)
+  text-transform: uppercase
+  padding-bottom: 20px
+  +font-weight(bold)
+
+.testimonial__quote
+  position: relative
+  background: #CF7DB8
+  color: #fff
+  width: 70%
+  padding: 2%
+  margin: 15px auto
+
+.testimonial__quote:after
+  bottom: 100%
+  left: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+  border-color: rgba(207, 125, 184, 0)
+  border-bottom-color: #CF7DB8
+  border-width: 15px
+  margin-left: -15px
+
+.testimonial__quote  p
+  margin: 1.5em 10px
+  padding: 0.5em 10px
+  quotes: "\201C""\201D""\2018""\2019"
+
+.testimonial__quote p:before
+  color: #fff
+  content: open-quote
+  font-size: 4em
+  line-height: 0.1em
+  margin-right: 0.25em
+  vertical-align: -0.4em
+
+.testimonial__quote p:after
+  color: #fff
+  content: close-quote
+  font-size: 4em
+  line-height: 0.1em
+  margin-right: 0.25em
+  vertical-align: -0.4em
+
+.testimonial__quote p
+  display: inline
+  text-align: right
+
+.testimonial__name,
+.testimonial__description
+  font-style: italic
+  float: right
+  white-space: nowrap
+  padding-right: 100px
+
+.testimonial__name
+  +font-weight(bold)
+  +inuit-font-size(20px, 1)
+
+.testimonial__body
+  width: 100%

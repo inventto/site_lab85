@@ -1,0 +1,96 @@
+/ Hero
+.row.hero.hero--home
+  .container
+    .hero__header
+      h2.hero__title Bem-vindo à
+      =image_tag 'logo-lab-white.svg'
+      h2.hero__subtitle Street art readymade migas, pork belly jean shorts sustainable gentrify.
+    .hero__footer
+      =link_to 'Conheça nosso trabalho!', '/', class:'btn btn--translucent'
+
+/First
+
+.row.first.first--home
+    .container
+      .first__header
+        h1.first__title  Primeira Seção
+        h2.first__subtitle  Odd Future tousled Kickstarter whatever High Life wayfarers.
+      .first__body
+        .startup
+          =image_tag 'startup-image--large.jpg'
+
+        .first__paragraph
+          p. Aesthetic health goth raw denim, stumptown cliche Echo Park +1. Bushwick letterpress yr tilde, church-key post-ironic PBR&B literally mustache mlkshk cliche Portland.
+          p. Carles Portland banjo PBR&B umami, Kickstarter XOXO pop-up gastropub Vice freegan distillery lo-fi. Try-hard cliche scenester occupy, post-ironic Thundercats Marfa kogi ethical selfies.
+
+/ Second
+.row.second.second--home
+    .container
+      .second__header
+        h1.second__title  Segunda Seção
+        h2.second__subtitle  Odd Future tousled Kickstarter whatever High Life wayfarers.
+      .second__body
+        .gym
+          =image_tag 'gym-image--large.jpg'
+
+    .second__footer
+      =link_to 'Clique neste botão aqui!', '/', class:'btn btn--translucent'
+
+
+/ Testimonial
+.row.testimonial.testimonial--home
+    .container
+      .testimonial__header
+        h1.testimonial__title  Depoimentos
+        h2.testimonial__subtitle  Odd Future tousled Kickstarter whatever High Life wayfarers.
+
+    #owl-slides.owl-carousel
+      - for i in (1..3)
+          .testimonial__body
+            blockquote.testimonial
+              .testimonial__meta
+                .testimonial__media
+                  .avatar
+                    =image_tag 'testimonial-avatar.jpg'
+
+              .testimonial__quote
+                p Tote bag Austin flexitarian whatever next level pickled. Before they sold out put a bird on it literally Truffaut, migas sustainable drinking vinegar semiotics chambray banh mi tote bag.
+              .testimonial__name Bilbo Baggins
+              br
+              .testimonial__description Ladrão da montanha
+
+
+/Contact
+.row.contact.contact--home
+    .container
+      .contact__header
+        h1.contact__title  Entre em contato
+        h2.contact__subtitle  Odd Future tousled Kickstarter whatever High Life wayfarers.
+      .media__contact
+        .contact__body
+          form.form
+            fieldset.fieldset
+              .form__row
+                .form__field
+                  input.form__input type='text' placeholder='Nome'
+              .form__row
+                .form__field
+                  input.form__input type='email' placeholder='Email'
+              .form__row
+                .form__field
+                  textarea.form__input  placeholder='Mensagem'
+              .form__row
+                button.btn--send type='submit' Enviar
+
+          .facebook__body.media__contact
+
+
+      .list.list--contact
+        .list__item.list__item--address
+          address.address
+        .list__item.list__item--email
+
+          = link_to 'contato@lab85.com.br', 'mailto:contato@lab85.com.br'
+
+        .list__item.list__item--phone
+          = link_to '+55 31 5515151 ', 'tel: +55 31 5515151'

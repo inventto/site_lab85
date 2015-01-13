@@ -1,0 +1,35 @@
+.hero
+  +clearfix
+
+.hero--home
+  text-align: center
+  text-shadow: 0 1px 0 rgba(#000, .15)
+  background: linear-gradient(rgba(#c64fe7, .7),rgba(#c64fe7, .7)), image-url('hero--small.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 435px
+  padding-top: 90px
+  padding-bottom: 136px
+
+  .hero__title,
+  .hero__subtitle
+    color: #fff
+    margin: 0
+    padding: 0
+
+  .hero__title
+    +inuit-font-size(32px, 1)
+    text-transform: uppercase
+    padding-bottom: 28px
+
+  .hero__lab
+    +inuit-font-size(100px, 1)
+
+
+  .hero__subtitle
+    +inuit-font-size(24px, 1)
+    +font-weight(light)
+    padding-bottom: 72px
+
+  .hero__header img
+    padding: 2%

@@ -1,0 +1,48 @@
+// --------------------------------------
+//
+//   #components.buttons
+//
+// --------------------------------------
+
+
+.btn
+  +font-weight(bold)
+  +transition(all 0.2s)
+
+  +attention()
+    background-color: darken($color-btn, 10%)
+    border-color: darken($color-btn, 10%)
+
+
+.btn--secondary
+  background: none
+  color: $color-btn
+
+  +attention()
+    background: none
+    color: darken($color-btn, 10%)
+
+.btn--translucent
+  background: rgba(#fff, .4)
+  border: none
+  border-radius: 5px
+  +inuit-font-size(24px, 1)
+  color: rgba(#fff, .8)
+  padding: 2%
+
+  +attention()
+    background:  rgba(#fff, .2)
+    border-color: #fff
+    color: #fff
+
+.btn--send
+  background: rgba(#CF7DB8, 1)
+  border: none
+  border-radius: 5px
+  color: rgba(#fff, .8)
+  padding: 2%
+
+  +attention()
+    background:  rgba(#fff, .2)
+    border-color: #fff
+    color: #fff
