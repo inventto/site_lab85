@@ -51,7 +51,7 @@
               .testimonial__meta
                 .testimonial__media
                   .avatar
-                    =image_tag 'testimonial-avatar.jpg'
+                    =image_tag "testimonial-avatar#{i}.jpg"
 
               .testimonial__quote
                 p Tote bag Austin flexitarian whatever next level pickled. Before they sold out put a bird on it literally Truffaut, migas sustainable drinking vinegar semiotics chambray banh mi tote bag.
@@ -68,31 +68,32 @@
         h2.contact__subtitle  Odd Future tousled Kickstarter whatever High Life wayfarers.
 
       .media__contact
-        .contact__body
-          form.form
-            fieldset.fieldset
-              .form__row
-                .form__field
-                  input.form__input type='text' placeholder='Nome'
-              .form__row
-                .form__field
-                  input.form__input type='email' placeholder='Email'
-              .form__row
-                .form__field
-                  textarea.form__input  placeholder='Mensagem'
-              .form__row
-                button.btn--send type='submit' Enviar
+          .facebook__body
+            .fb-like-box data-colorscheme="light" data-header="true" data-href="https://www.facebook.com/lab85" data-show-border="true" data-show-faces="true" data-stream="false"
 
-      .facebook__body.media__contact
-        .fb-like-box data-colorscheme="light" data-header="true" data-href="https://www.facebook.com/lab85" data-show-border="true" data-show-faces="true" data-stream="false"
+          .contact__body
+            form.form
+              fieldset.fieldset
+                .form__row
+                  .form__field
+                    input.form__input type='text' placeholder='Nome'
+                .form__row
+                  .form__field
+                    input.form__input type='email' placeholder='Email'
+                .form__row
+                  .form__field
+                    textarea.form__input  placeholder='Mensagem'
+                .form__row
+                  button.btn--send type='submit' Enviar
 
 
-      .list.list--contact
-        .list__item.list__item--address
-          address.address
-        .list__item.list__item--email
 
-          = link_to 'contato@lab85.com.br', 'mailto:contato@lab85.com.br'
+    .list.list--contact
+      .list__item.list__item--address
+        address.address
+      .list__item.list__item--email
 
-        .list__item.list__item--phone
-          = link_to '+55 31 5515151 ', 'tel: +55 31 5515151'
+        = link_to 'contato@lab85.com.br', 'mailto:contato@lab85.com.br'
+
+      .list__item.list__item--phone
+        = link_to '+55 31 5515151 ', 'tel: +55 31 5515151'
