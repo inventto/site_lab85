@@ -37,20 +37,51 @@
   border: none
   text-align: left
 
+.facebook__body
+  width: 50%
 
 .list__item--email a, .list__item--phone a
   color: #fff
   text-decoration: none
 
-.facebook__body
+.fb-like-box
   background: #fff
-  padding: 6%
-  width: 50%
+  width: 100%
   float: right
+  border: none
+
+#fb-root
+  display: none
+
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style]
+  width: 100% !important
+
+
+
+.fieldset, .facebook__body
+  padding-top: 30px
+
+  .media__contact
+    width: 35%
+    padding: 2%
+    margin: 10px auto
+    display: inline-flex
+    top: 0
+
+  @media screen and (max-width: 900px)
+    .media__contact
+      width: 90%
+      padding: 1%
+      text-align: justify
 
 @media screen and (max-width: 860px)
   .form__input
     width: 100%
+
+  .facebook__body
+    width: 100%
+
 
 @media screen and (max-width: 650px)
   .facebook__body
