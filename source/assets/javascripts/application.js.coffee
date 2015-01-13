@@ -20,5 +20,6 @@ $(document).ready ->
     items: 1
     autoPlay: true
     slideSpeed:	800
+    singleItem: true
 
   return

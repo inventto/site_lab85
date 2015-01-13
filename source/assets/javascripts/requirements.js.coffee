@@ -25,6 +25,6 @@
 #= require fastclick/lib/fastclick
 
 # -------------------------------------
-# Fastclick
+# OwlCarousel
 # -------------------------------------
 #= require OwlCarousel/owl-carousel/owl.carousel.js
