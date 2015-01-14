@@ -28,3 +28,8 @@
 # OwlCarousel
 # -------------------------------------
 #= require OwlCarousel/owl-carousel/owl.carousel.js
+
+# -------------------------------------
+# SlickNav
+# -------------------------------------
+#= require slicknav/jquery.slicknav.min.js

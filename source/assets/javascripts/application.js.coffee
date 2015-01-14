@@ -23,3 +23,7 @@ $(document).ready ->
     singleItem: true
 
   return
+
+$ ->
+  $("#menu").slicknav()
+  return
