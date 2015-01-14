@@ -91,3 +91,7 @@ configure :build do
   require "middleman-smusher"
   activate :smusher
 end
+
+# ----------------------------------------------
+# Testimonial configuration
+# ----------------------------------------------

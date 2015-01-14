@@ -1,0 +1,13 @@
+people:
+  - name: "Bilbo Baggins"
+    job: "Ladrão da Montanha"
+    testimonial: "Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Quisque id odio. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+    photo: "./testimonial/bilbo.jpg"
+  - name: "Thorin Oakshield"
+    job: "Herdeiro de Erebor"
+    testimonial: "Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    photo: "./testimonial/thorin.jpg"
+  - name: "Gandalf, The Grey"
+    job: "Mago do conselho"
+    testimonial: "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Pellentesque dapibus hendrerit tortor. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo."
+    photo: "./testimonial/gandalf.jpg"

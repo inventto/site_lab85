@@ -44,21 +44,23 @@
         h1.testimonial__title  Depoimentos
         h2.testimonial__subtitle  Odd Future tousled Kickstarter whatever High Life wayfarers.
 
-    #owl-slides.owl-carousel
-  
-      - for i in (1..3)
-          .testimonial__body
-            blockquote.testimonial
-              .testimonial__meta
-                .testimonial__media
-                  .avatar
-                    =image_tag "testimonial-avatar#{i}.jpg"
 
-              .testimonial__quote
-                p Tote bag Austin flexitarian whatever next level pickled. Before they sold out put a bird on it literally Truffaut, migas sustainable drinking vinegar semiotics chambray banh mi tote bag.
-              .testimonial__name Bilbo Baggins
-              br
-              .testimonial__description Ladrão da montanha
+    #owl-slides.owl-carousel
+
+
+        - data.people.people.each do |people|
+            .testimonial__body
+              blockquote.testimonial
+                .testimonial__meta
+                  .testimonial__media
+                    .avatar
+                      =image_tag people.photo
+
+                .testimonial__quote
+                  p #{people.testimonial}
+                .testimonial__name #{people.name}
+                br
+                .testimonial__description #{people.job}
 
 
 /Contact
