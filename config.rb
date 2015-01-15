@@ -4,7 +4,7 @@
 
 # Site Settings
 # ----------------------------------------------
-@google_analytics = ''
+@google_analytics = 'UA-32817386-2'
 set :site_name, 'Lab 85 - Soluções Computacionais'
 set :site_description, 'Startup de softwares voltados à wellness e fitness'
 set :site_url, 'http://lab85.com.br'
